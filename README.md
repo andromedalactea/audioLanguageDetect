@@ -1,27 +1,31 @@
-# audioLangDetect
+# Audio Language Detection with Whisper
 
 ## Overview
-Welcome to AudioLangDetect, an advanced tool for detecting the spoken language in audio files. This repository hosts the code and resources necessary to accurately identify a wide range of languages using state-of-the-art machine learning techniques. audioLangDetect is ideal for researchers, developers, and anyone interested in language processing and audio analysis.
+This repository contains a Python script that utilizes OpenAI's Whisper model to detect the spoken language in an audio file. It's designed to be a simple and effective tool for identifying whether the language in an audio file is Japanese, English, or Chinese.
 
 ## Features
-- **Language Detection**: Automatically identify the language spoken in audio files.
-- **Support for Multiple Languages**: Capable of recognizing several languages with high accuracy.
-- **Machine Learning Powered**: Utilizes the latest in ML algorithms for efficient and reliable detection.
-- **Easy to Use**: Designed with simplicity in mind, making language detection accessible to everyone.
+- Detects if the spoken language in an audio file is Japanese, English, or Chinese.
+- Returns a numerical code representing the detected language (0 for Japanese, 1 for English, 2 for Chinese).
+- Informs if the detected language is not among the three mentioned.
+
+## Requirements
+- Python 3.8 or higher
+- Whisper package from OpenAI
 
 ## Installation
-(Provide detailed steps on how to install the project, including any necessary dependencies.)
+Install the Whisper package using pip:
+```
+pip install openai-whisper
+```
 
 ## Usage
-(Provide instructions on how to use the tool, including example code snippets or command line instructions.)
+To use the script, run the `detect_language` function with the path to your audio file:
+```python
+from main import detect_language
+
+language_code = detect_language("path_to_your_audio_file")
+print(language_code)
+```
 
 ## Contributing
-We welcome contributions! If you're interested in improving AudioLangDetect, feel free to fork this repository and submit your pull requests. For major changes, please open an issue first to discuss what you would like to change.
-
-## License
-(Include information about the repository's license - typically MIT, GPL, Apache, etc.)
-
-## Acknowledgements
-(Optionally, include acknowledgements to any individuals, organizations, or resources that were instrumental in the development of this tool.)
-
-Thank you for your interest in AudioLangDetect, and we look forward to your contributions to this project!
+Contributions to this project are welcome! Please feel free to submit pull requests or create issues for bugs and feature requests.
