@@ -1,6 +1,9 @@
-Whisper calculate the language with more probability
+## Whisper Language Detection and Codes
 
-The codes for the languages:
+- Whisper calculates the language with the highest probability from an audio file.
+
+### Language Codes:
+```
 "en": "english",
     "zh": "chinese",
     "de": "german",
@@ -101,3 +104,4 @@ The codes for the languages:
     "jw": "javanese",
     "su": "sundanese",
     "yue": "cantonese"
+```
