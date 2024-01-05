@@ -21,7 +21,7 @@ pip install openai-whisper
 ## Usage
 To use the script, run the `detect_language` function with the path to your audio file:
 ```python
-from main import detect_language
+from scripts.detect_language import detect_language
 
 language_code = detect_language("path_to_your_audio_file")
 print(language_code)
